@@ -1,9 +1,7 @@
 import style from '../css/Navbar.module.css';
 import { motion } from 'framer-motion';
-import logo from '../images/logo.png';
-import consultingLogo from '../images/consultingLogo.png';
+
 import { useLocation } from 'react-router-dom';
-import logoRed from '../images/logoRed.png';
 
 function Navbar({ elsInView, navHandler, navOpen }) {
 	const location = useLocation();
