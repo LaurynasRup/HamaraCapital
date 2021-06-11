@@ -27,7 +27,7 @@ function Social({ colorScheme }) {
 					</a>
 				</div>
 				<div className="socialMediaEl">
-					<a href="https://linkedin.com">
+					<a href="https://www.linkedin.com/in/daniel-isaac-gold">
 						<FaLinkedin size={25} />
 					</a>
 				</div>
