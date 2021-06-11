@@ -1,0 +1,109 @@
+.container {
+	width: 100%;
+	height: 488px;
+	background: rgba(0, 0, 0.7);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.container h1 {
+	text-align: center;
+	color: #fbf8ef;
+	font-size: 82px;
+	z-index: 10;
+}
+
+.slide1,
+.slide2,
+.slide3 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.slide1 {
+	background: url('https://res.cloudinary.com/laurynasrup/image/upload/v1622990224/DSC_5878_blended_website-crop_gfndkt.jpg')
+		no-repeat;
+	background-size: cover;
+	animation: fade1 40s ease-in-out infinite;
+}
+.slide2 {
+	background: url('https://res.cloudinary.com/laurynasrup/image/upload/v1622990224/DSC_4549_copy_1_1_-crop_relfen.jpg')
+		no-repeat;
+	background-size: cover;
+	animation: fade2 40s ease-in-out infinite;
+}
+.slide3 {
+	background: url('https://res.cloudinary.com/laurynasrup/image/upload/v1622990224/DSC_9287_copy-crop_r1wjfu.jpg')
+		no-repeat;
+	background-size: cover;
+	animation: fade3 40s ease-in-out infinite;
+}
+
+@keyframes fade1 {
+	0% {
+		opacity: 1;
+	}
+	33% {
+		opacity: 0;
+	}
+	66% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fade2 {
+	0% {
+		opacity: 0;
+	}
+	33% {
+		opacity: 1;
+	}
+	66% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes fade3 {
+	0% {
+		opacity: 0;
+	}
+	33% {
+		opacity: 0;
+	}
+	66% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@media (min-width: 1600px) {
+	.container h1 {
+		font-size: 82px;
+	}
+}
+
+@media (max-width: 900px) {
+	.container h1 {
+		font-size: 48px;
+	}
+}
+@media (max-width: 600px) {
+	.container {
+		height: 35vh;
+	}
+	.container h1 {
+		font-size: 28px;
+	}
+}

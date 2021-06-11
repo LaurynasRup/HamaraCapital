@@ -1,0 +1,20 @@
+{
+	"name": "hamara",
+	"version": "1.0.0",
+	"description": "hamara",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js",
+		"client": "npm start --prefix client",
+		"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+	},
+	"author": "Laurynas Rup",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/LaurynasRup/HamaraCapital/issues"
+	},
+	"homepage": "https://github.com/LaurynasRup/HamaraCapital#readme",
+	"dependencies": {
+		"express": "^4.17.1"
+	}
+}

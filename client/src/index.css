@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'Neue';
+	src: url('./fonts/NeueHaasDisplayBold.ttf');
+}
+@font-face {
+	font-family: 'Neue Medium';
+	src: url('./fonts/NeueHaasDisplayMediu.ttf');
+}
+/* Html,
+body {
+	max-width: 100%;
+	overflow-x: hidden;
+} */
+
+body {
+	font-family: 'Neue Medium', sans-serif;
+	overflow-y: hidden;
+}
+
+.mainCont {
+	width: 100%;
+	height: 86vh;
+	margin-top: 14vh;
+	overflow: scroll;
+	scroll-behavior: smooth;
+	background: #fbf8ef;
+}
+.mainCont.white {
+	background: #fbf8ef;
+}
+
+.social-cont {
+	padding: 2rem 0;
+	width: 80%;
+	max-width: 2200px;
+	margin: 0 auto;
+}
+
+.line-break {
+	margin-top: 4rem;
+}
+
+@media (max-width: 900px) {
+	.social-cont {
+		padding: 1rem 0;
+		width: 90%;
+	}
+	.line-break {
+		margin-top: 2rem;
+	}
+}

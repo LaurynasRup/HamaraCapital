@@ -1,0 +1,164 @@
+.navbar {
+	width: 100%;
+	display: grid;
+	place-items: center;
+	height: 14vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 15;
+}
+
+.navbarRed {
+	background-color: #ee4e3c;
+}
+.navbarWhite {
+	background-color: #fbf8ef;
+}
+
+.inner {
+	width: 80%;
+	max-width: 2200px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logoImg {
+	width: 400px;
+}
+
+.logoRed {
+	width: 200px;
+}
+
+.navbar span {
+	color: #fbf8ef;
+	font-size: 48px;
+}
+
+.navbarMenu,
+ul,
+li {
+	display: flex;
+	align-items: center;
+	list-style: none;
+}
+
+.navbarMenu li {
+	padding: 0.3rem 0.4rem;
+	margin-left: 2rem;
+}
+.bordered {
+	margin-left: 2rem;
+	border: solid 3px black;
+}
+
+.line {
+	width: 0%;
+	height: 2px;
+	background: #000;
+	animation: expand 0.5s ease forwards;
+}
+
+@keyframes expand {
+	from {
+		width: 0%;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+.linkBlack {
+	text-decoration: none;
+	font-size: 20px;
+	color: #000;
+}
+
+.linkRed {
+	text-decoration: none;
+	font-size: 20px;
+	color: #ee4e3c;
+	border: solid 3px #ee4e3c;
+	padding: 0.3rem 1.4rem;
+}
+
+.burger {
+	display: none;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+.burger div {
+	margin-bottom: 8px;
+	height: 2px;
+	width: 40px;
+	background: black;
+	z-index: 10;
+}
+.burger.open div:first-of-type {
+	transform: rotate(30deg);
+	transform-origin: left;
+	transition: transform 0.3s ease-in;
+}
+.burger.open div:nth-of-type(2) {
+	opacity: 0;
+	transition: opacity 0.2s ease;
+}
+.burger.open div:last-of-type {
+	transform: rotate(-30deg);
+	transform-origin: left;
+	transition: transform 0.3s ease-in;
+}
+
+@media (max-width: 900px) {
+	.inner {
+		width: 90%;
+	}
+	.logoImg {
+		width: 200px;
+	}
+	.navbar ul li {
+		padding: 0.3rem 0.4rem;
+		margin-left: 1rem;
+	}
+	.bordered {
+		margin-left: 1rem;
+		border: solid 2px black;
+	}
+	.linkBlack {
+		font-size: 16px;
+	}
+	.linkRed {
+		font-size: 16px;
+		border: solid 2px #ee4e3c;
+	}
+}
+
+@media (max-width: 600px) {
+	.burger {
+		display: flex;
+	}
+
+	.navbarMenu {
+		position: absolute;
+		height: 100vh;
+		width: 100%;
+		top: 0;
+		right: -100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 30vh 0;
+		background: #ee4e3c;
+		z-index: 5;
+
+		transition: right 0.2s ease;
+		overflow: hidden;
+	}
+
+	.navbarMenu.open {
+		right: 0;
+	}
+}
