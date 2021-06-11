@@ -71,6 +71,13 @@
 		line-height: 2.5rem;
 	}
 }
+@media (max-width: 1200px) {
+	.text {
+		font-size: 18px;
+
+		line-height: 1.7rem;
+	}
+}
 
 @media (max-width: 900px) {
 	.inner {
@@ -136,6 +143,7 @@
 	}
 
 	.text {
+		padding-top: 1rem;
 		font-size: 16px;
 		line-height: 1.4rem;
 	}

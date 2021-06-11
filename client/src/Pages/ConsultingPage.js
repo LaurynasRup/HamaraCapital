@@ -1,5 +1,5 @@
 import TextContainer from '../Components/TextContainer';
-import { loremText } from '../Assets/text';
+import { consultText } from '../Assets/text';
 import Article from '../Components/Article';
 import { articleText, articleText2 } from '../Assets/text';
 import Social from '../Components/Social';
@@ -8,7 +8,7 @@ function ConsultingPage({ setElsInView, elsInView }) {
 	return (
 		<div className="mainCont white" id="#consultingHome">
 			<section id="home">
-				<TextContainer text={loremText} scheme="white" />
+				<TextContainer text={consultText} scheme="white" />
 				<Article
 					setElsInView={setElsInView}
 					elsInView={elsInView}
