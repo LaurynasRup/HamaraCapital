@@ -25,19 +25,19 @@
 }
 
 .slide1 {
-	background: url('https://res.cloudinary.com/laurynasrup/image/upload/v1622990224/DSC_5878_blended_website-crop_gfndkt.jpg')
+	background: url('https://res.cloudinary.com/laurynasrup/image/upload/q_auto:best/v1622990224/Hamara/DSC_5878_blended_website-crop_gfndkt.jpg')
 		no-repeat;
 	background-size: cover;
 	animation: fade1 40s ease-in-out infinite;
 }
 .slide2 {
-	background: url('https://res.cloudinary.com/laurynasrup/image/upload/v1622990224/DSC_4549_copy_1_1_-crop_relfen.jpg')
+	background: url('https://res.cloudinary.com/laurynasrup/image/upload/q_auto:best/v1622990224/Hamara/DSC_4549_copy_1_1_-crop_relfen.jpg')
 		no-repeat;
 	background-size: cover;
 	animation: fade2 40s ease-in-out infinite;
 }
 .slide3 {
-	background: url('https://res.cloudinary.com/laurynasrup/image/upload/v1622990224/DSC_9287_copy-crop_r1wjfu.jpg')
+	background: url('https://res.cloudinary.com/laurynasrup/image/upload/q_auto:best/v1622990224/Hamara/DSC_9287_copy-crop_r1wjfu.jpg')
 		no-repeat;
 	background-size: cover;
 	animation: fade3 40s ease-in-out infinite;
