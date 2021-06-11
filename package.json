@@ -15,6 +15,7 @@
 	},
 	"homepage": "https://github.com/LaurynasRup/HamaraCapital#readme",
 	"dependencies": {
+		"cors": "^2.8.5",
 		"express": "^4.17.1"
 	}
 }
