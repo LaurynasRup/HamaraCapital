@@ -34,6 +34,15 @@
 	}
 }
 
+@media (max-width: 1200px) {
+	.inner {
+		width: 90%;
+	}
+	.textJustify {
+		font-size: 28px;
+	}
+}
+
 @media (max-width: 900px) {
 	.inner {
 		width: 90%;

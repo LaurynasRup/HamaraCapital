@@ -60,6 +60,11 @@
 .twitterCont p {
 	font-size: 36px;
 }
+@media (max-width: 1200px) {
+	.inner {
+		width: 90%;
+	}
+}
 
 @media (max-width: 900px) {
 	.container {

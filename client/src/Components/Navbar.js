@@ -58,24 +58,29 @@ function Navbar({ elsInView, navHandler, navOpen }) {
 				<>
 					{pathname === '/' && (
 						<ul className={`${style.navbarMenu} ${navOpen ? style.open : ''}`}>
-							<li>
-								<a href="#about" className={style.linkBlack}>
-									About
-								</a>
-								<div className={elsInView.about ? style.line : ''} />
-							</li>
-							<li>
-								<a href="#partners" className={style.linkBlack}>
-									Partners
-								</a>
-								<div className={elsInView.partners ? style.line : ''} />
-							</li>
-							<li>
-								<a href="#contact" className={style.linkBlack}>
-									Contact
-								</a>
-								<div className={elsInView.contact ? style.line : ''} />
-							</li>
+							{window.innerWidth > 600 && (
+								<>
+									<li>
+										<a href="#about" className={style.linkBlack}>
+											About
+										</a>
+										<div className={elsInView.about ? style.line : ''} />
+									</li>
+									<li>
+										<a href="#partners" className={style.linkBlack}>
+											Partners
+										</a>
+										<div className={elsInView.partners ? style.line : ''} />
+									</li>
+									<li>
+										<a href="#contact" className={style.linkBlack}>
+											Contact
+										</a>
+										<div className={elsInView.contact ? style.line : ''} />
+									</li>
+								</>
+							)}
+
 							<li className={style.bordered}>
 								<a href="/consulting" className={style.linkBlack}>
 									Consulting

@@ -16,6 +16,12 @@
 	font-size: 82px;
 }
 
+@media (max-width: 1200px) {
+	.image h1 {
+		font-size: 56px;
+	}
+}
+
 @media (max-width: 900px) {
 	.image h1 {
 		font-size: 48px;

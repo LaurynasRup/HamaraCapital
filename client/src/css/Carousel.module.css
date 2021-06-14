@@ -93,6 +93,11 @@
 		font-size: 82px;
 	}
 }
+@media (max-width: 1200px) {
+	.container h1 {
+		font-size: 56px;
+	}
+}
 
 @media (max-width: 900px) {
 	.container h1 {

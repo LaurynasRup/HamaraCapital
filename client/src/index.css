@@ -46,6 +46,11 @@ body {
 	margin-top: 4rem;
 }
 
+@media (max-width: 1200px) {
+	.social-cont {
+		width: 90%;
+	}
+}
 @media (max-width: 900px) {
 	.social-cont {
 		padding: 1rem 0;
